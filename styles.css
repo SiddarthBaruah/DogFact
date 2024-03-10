@@ -9,3 +9,23 @@ body {
 #fact {
   font-size: 1.5rem;
 }
+
+.bug {
+  width: 100px; /* Adjust the size of the bug */
+  height: auto;
+  background-image: url("./4-2-bug-png-2.png"); /* Set the background image */
+  position: absolute;
+  top: 50%;
+  left: -100px; /* Initial position outside of the screen */
+  animation: bugAnimation 5s linear infinite alternate; /* Animation for bug movement */
+  transform: rotate(90deg);
+}
+
+@keyframes bugAnimation {
+  0% {
+    transform: translateX(-100%) rotate(90deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 50px)) rotate(270deg); /* Moves the bug across the screen */
+  }
+}
