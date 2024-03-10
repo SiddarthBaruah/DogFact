@@ -13,8 +13,8 @@ body {
 .bug {
   width: 100px; /* Adjust the size of the bug */
   height: auto;
-  background-image: url("./4-2-bug-png-2.png"); /* Set the background image */
-  position: absolute;
+  /* background-image: url("./4-2-bug-png-2.png");  */
+  position: relative;
   top: 50%;
   left: -100px; /* Initial position outside of the screen */
   animation: bugAnimation 5s linear infinite alternate; /* Animation for bug movement */
